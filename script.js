@@ -20,8 +20,21 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
         if (window.scrollY > 0) {
             navigation.classList.add('scrolled');
+            afficheMenu.classList.remove('open')
+            menuBurgerIcon.classList = 'fa-solid fa-bars';
         } else {
             navigation.classList.remove('scrolled');
         }
     });
 });
+
+//menu burger
+const menuBurgerButton = document.querySelector('.menu-burger');
+const menuBurgerIcon = document.querySelector('.menu-burger i');
+const afficheMenu = document.querySelector('.nav-menu');
+
+menuBurgerButton.onclick = function() {
+    afficheMenu.classList.toggle('open');
+    const isOpen = afficheMenu.classList.contains('open');
+    menuBurgerIcon.classList = isOpen ? 'fa-solid fa-x' : 'fa-solid fa-bars';
+}
