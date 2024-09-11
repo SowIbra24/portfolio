@@ -1,4 +1,4 @@
-
+/*----------- body / header / footer ---------------- */
 * {
     margin: 0;
     box-sizing: border-box; 
@@ -20,6 +20,7 @@ body{
          rgba(248, 248, 248,0.05) 32%,rgba(148, 148, 148,0.05) 32%, rgba(148, 148, 148,0.05) 35%,
          rgba(202, 202, 202,0.05) 35%, rgba(202, 202, 202,0.05) 51%,rgba(181, 181, 181,0.05) 51%, 
          rgba(181, 181, 181,0.05) 100%),linear-gradient(182deg, hsl(214,0%,11%),hsl(214,0%,11%));
+ font-size: 1.2em;
 }
 
 footer {
@@ -46,6 +47,7 @@ header{
   border: 2px solid transparent;
   background-color: white;
 }
+/*---------- sections ------------*/
 
 section
 {
@@ -59,6 +61,7 @@ section
   max-width: 1350px;
   margin: 0 auto;
 }
+/* ------------ navigation ----------------- */
 .navigation
 {
   padding: 0 30px 0 10px;
@@ -76,12 +79,15 @@ section
   background-color: #565659; 
 
 }
+/* -------- Acceuil ------ */
 .title{
   margin-bottom: 30px;
   font-size: 52px;
   color: #03CBDF;
   text-align: center;
 }
+
+/* --------- A propos --------- */
 .text-title
 {
     font-size: 48px;
@@ -134,15 +140,20 @@ section
    color: #03CBDF;
    
 }
+.nav-link
+{
+  padding-right: 20px;
+  font-size: 1em;
+}
 
 .ma-photo
 {
    width: 25%;
 }
 
-.a_propos{
+/*.a_propos, .etu-exp{
   font-size: 1.2em;
-}
+}*/
 
 .grille{
   display: grid;
@@ -235,6 +246,20 @@ form {
             background-color:whitesmoke;
         }
   }
+
+/* ---------- Education ------------ */
+
+.etu-exp
+{
+  display: flex;
+  justify-content: space-around;
+}
+.couleur-bleue
+{
+  color: #03CBDF;
+}
+
+
 /* ------ Menu burger ----- */
 .navigation .menu-burger
 {
@@ -265,18 +290,28 @@ form {
         } 
 
     }
-
   
 /* ------ Responsive ------ */
 @media screen and (max-width: 996px){
 
-  
+  body
+  {
+    font-size: 1.1em;
+  }
+  section, .conteneur
+  {
+    padding: 10px;
+  }
+  .text-title,.title{
+    font-size: 1.7em;
+  }
   .navigation
     {
         display: flex;
         flex-direction: row;
         align-items: center;
 	      justify-content: space-between;
+        padding-left: 0;
     }
     .nav-bar
     {
@@ -293,10 +328,14 @@ form {
       font-size: 2.5rem;
       cursor: pointer;
     }
+    .nav-menu
+    {
+      font-size: 0.8em;
+    }
     .nav-menu.open{
       display: flex;
       flex-direction: column;
-      gap:30px;
+      gap:25px;
     }
 
     a{
@@ -304,7 +343,18 @@ form {
     }
     .logo
     {
-       width: 100px;
+       width: 70px;
+       height: 50px;
+       padding-top: 10px;
+    }
+    
+    .etu-exp
+    {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap:30px;
+
     }
     .section-contact {
         padding: 50px 20px;
