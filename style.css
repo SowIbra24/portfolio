@@ -366,8 +366,9 @@ form {
       }
     .grille
     {
-      grid-template-columns: 1fr;
-      grid-template-columns: 500px;
+      display: grid;
+      grid-template-columns: 0.5fr 0.5fr;
+      grid-template-rows: 200px 200px;
       justify-content: center;
     }
     .grille img
