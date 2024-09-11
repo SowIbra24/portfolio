@@ -149,10 +149,10 @@ section
    width: 25%;
 }
 
-/*.a_propos, .etu-exp{
-  font-size: 1.2em;
-}*/
-
+li
+{
+  list-style: circle;
+}
 .grille{
   display: grid;
   grid-template-rows: 300px 300px 300px;
