@@ -22,8 +22,7 @@ body{
 }
 
 footer {
-  background-color: #565659; 
-  /*padding: 20px 50px 20px 50px;*/
+  background-color: #1f242d;; 
   color: white;
   width: 100%;
   box-sizing: border-box;
@@ -64,7 +63,17 @@ section
 {
   padding: 0 30px 0 10px;
 }
-.navigation, .accueil-intro
+.navigation 
+{
+  display: flex;
+  justify-content: space-between;
+}
+.nav-bar
+{
+  display: flex;
+}
+
+.accueil-intro
 {
   display: flex;
 	flex-direction: row;
@@ -73,8 +82,17 @@ section
   transition: background-color 0.5ms ease;
   
 }
+.presentation
+{
+  font-size: 1.3em;
+}
+.texte-js
+{
+  color: #03CBDF;
+  font-weight: bolder;
+}
 .navigation.scrolled {
-  background-color: #565659; 
+  background-color: #1f242d; 
 
 }
 /* -------- Acceuil ------ */
@@ -257,6 +275,14 @@ form {
   color: #03CBDF;
 }
 
+/* -------- Projets ---------- */
+.projet .projet-card
+{
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 /* ------ Menu burger ----- */
 .navigation .menu-burger
@@ -290,101 +316,108 @@ form {
     }
   
 /* ------ Responsive ------ */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px)
+{
 
   body
   {
     font-size: 1.1em;
   }
-  section, .conteneur
+  section
   {
-    padding: 10px;
+    padding: 10px 0;
+    margin-bottom: 10px 0;
   }
+
   .text-title,.title{
     font-size: 1.7em;
   }
   .navigation
-    {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-	      justify-content: space-between;
-        padding-left: 0;
-    }
-    .nav-bar
-    {
-      /*display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;*/
-      display: none;
-    } 
+  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0;
+   }
+  .nav-bar
+  {
+    display: none;
+  } 
    
-    .navigation .menu-burger
-    {
-      display: block;
-      font-size: 2.5rem;
-      cursor: pointer;
-    }
-    .nav-menu
-    {
-      font-size: 0.8em;
-    }
-    .nav-menu.open{
-      display: flex;
-      flex-direction: column;
-      gap:25px;
-    }
-    .accueil-intro 
-    {
-      display: flex;
-      flex-direction: column-reverse;
-      gap:50px
-    }
+  .navigation .menu-burger
+  {
+    display: block;
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+  .nav-menu
+  {
+    font-size: 0.8em;
+  }
+  .nav-menu.open{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    background-color: #1f242d;
+  }
+  .accueil-intro 
+  {
+    display: flex;
+    flex-direction: column-reverse;
+    gap:50px
+  }
 
-    a{
-      padding-bottom: 5px;
-    }
-    .logo
-    {
-       width: 70px;
-       height: 50px;
-       padding-top: 10px;
-    }
-    
-    .etu-exp
-    {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap:30px;
+  a{
+    padding-bottom: 5px;
+  }
+  .logo
+  {
+      width: 70px;
+      height: 50px;
+      padding-top: 10px;
+  }
+  
+  .etu-exp
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:30px;
 
-    }
-    .section-contact {
-        padding: 50px 20px;
-      }
-    
-      .form-nom-email {
-        flex-direction: column;
-        gap: 0;
-      }
-    .grille
-    {
-      display: grid;
-      /*grid-template-columns: 0.5fr 0.5fr 0.5fr;
-      grid-template-rows: 150px 150px 150px;*/
-      grid-template-columns: 0.5fr;
-      grid-template-rows: 150px;
-      justify-content: center;
-    }
-    .grille img
-    {
-      width: 80%;
-      height: 80%;
-    }
-    .text-language
-    {
-      font-size: 1em;
-    }
+  }
+  .section-contact {
+    padding: 50px 20px;
+  }
+  
+  .form-nom-email {
+    flex-direction: column;
+    gap: 0;
+  }
+  .grille
+  {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 150px 150px 150px;
+    justify-content: center;
+  }
+  .grille img
+  {
+    width: 80%;
+    height: 80%;
+  }
+  .text-language
+  {
+    font-size: 1em;
+  }
+  .projet .projet-card
+  {
+    width: 350px;
+    margin: auto;
+  }
+  .presentation
+  {
+    text-align: center;
+  }
 }
 
