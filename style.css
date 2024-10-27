@@ -16,9 +16,7 @@ body{
   transparent 100%),linear-gradient(135deg, transparent 0%,transparent 16%, 
   rgba(200, 200, 200,0.07) 16%, rgba(200, 200, 200,0.07) 56%,transparent 56%, 
   transparent 100%), linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
-
-
- font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 footer {
@@ -26,7 +24,14 @@ footer {
   color: white;
   width: 100%;
   box-sizing: border-box;
-  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer i{
+  font-size: 2.5rem;
+  color: black;
+  background-color: #03CBDF;
 }
 header{
   background-color: transparent;
@@ -59,14 +64,13 @@ section
   margin: 0 auto;
 }
 /* ------------ navigation ----------------- */
-.navigation
-{
-  padding: 0 30px 0 10px;
-}
+
 .navigation 
 {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-around;
+  align-items: center;
+  padding: 0 30px 0 10px;
 }
 .nav-bar
 {
@@ -327,6 +331,15 @@ form {
   {
     padding: 10px 0;
     margin-bottom: 10px 0;
+  }
+  footer
+  {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer img
+  {
+    display: none;
   }
 
   .text-title,.title{
