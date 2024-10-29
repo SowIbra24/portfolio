@@ -376,6 +376,16 @@ footer img
 {
   display: none;
 }
+.bouton
+{
+  width: 100px;
+  height: 35px;
+  border: 1px solid #03CBDF;
+  border-radius: 10px;
+  background-color: #03CBDF;
+  color: #222230;
+  font-size: 0.9em;
+}
 
 .text-title,.title{
   font-size: 1.7em;
