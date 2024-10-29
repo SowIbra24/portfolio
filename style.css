@@ -132,7 +132,7 @@ section
   background-color: #03CBDF;
   color: #222230;
   font-size: 1.1em;
-  transition: all 0.8s 0.3s;  
+  transition: all 0.3s 0.09s;  
   
 }
 .bouton:hover
