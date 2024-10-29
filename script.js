@@ -11,6 +11,12 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    //Gestion de l'affichage voir plus
+    const btn_voir = document.getElementById("affiche");
+    const div_affiche = document.querySelector(".suite");
+    btn_voir.addEventListener('click', function(){
+        div_affiche.classList.toggle('affiche');
+    })
     // Gestion du menu burger
     const menuBurgerButton = document.querySelector('.menu-burger');
     const menuBurgerIcon = document.querySelector('.menu-burger i');

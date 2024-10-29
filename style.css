@@ -108,6 +108,15 @@ color: #03CBDF;
 text-align: center;
 }
 
+.suite
+{
+  display: none;
+}
+.suite.affiche
+{
+  display: block;
+}
+
 /* --------- A propos --------- */
 .text-title
 {
