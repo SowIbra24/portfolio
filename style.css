@@ -292,10 +292,11 @@ color: #03CBDF;
 /* -------- Projets ---------- */
 .projet .projet-card
 {
-display: flex;
+display: grid;
 gap: 30px;
-justify-content: space-between;
-flex-wrap: wrap;
+grid-template-columns:repeat(3,1fr) ;
+grid-template-rows: auto;
+justify-items: center;
 }
 
 /* ------ Menu burger ----- */
@@ -421,8 +422,7 @@ a{
 {
   display: grid;
   grid-template-columns: 0.5fr 0.5fr;
-  /*grid-template-rows: 150px 150px 150px;*/
-  justify-content: center;
+  justify-items: center;
 }
 .grille img
 {
@@ -437,7 +437,9 @@ a{
 {
   width: 300px;
   margin: auto;
-  
+  display: grid;
+  grid-template-columns: repeat(1, 0.5fr);
+  justify-items: center;
 }
 .presentation
 {
