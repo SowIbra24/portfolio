@@ -5,51 +5,56 @@
   box-sizing: border-box; 
 
 }
-body{
-background-color: #191924;
-font-family: "Ubuntu", sans-serif;
-background-image: linear-gradient(90deg, transparent 0%, transparent 88%,
-rgba(200, 200, 200,0.07) 88%, rgba(200, 200, 200,0.07) 93%,transparent 93%,
-transparent 100%), linear-gradient(135deg, transparent 0%, transparent 83%, 
-rgba(200, 200, 200,0.07) 83%, rgba(200, 200, 200,0.07) 91%,transparent 91%, 
-transparent 100%),linear-gradient(0deg, transparent 0%, transparent 43%, 
-rgba(200, 200, 200,0.07) 43%, rgba(200, 200, 200,0.07) 50%,transparent 50%, 
-transparent 100%),linear-gradient(135deg, transparent 0%,transparent 16%, 
-rgba(200, 200, 200,0.07) 16%, rgba(200, 200, 200,0.07) 56%,transparent 56%, 
-transparent 100%), linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
-font-size: 1.2em;
+body
+{
+  background-color: #191924;
+  font-family: "Ubuntu", sans-serif;
+  background-image: linear-gradient(90deg, transparent 0%, transparent 88%,
+  rgba(200, 200, 200,0.07) 88%, rgba(200, 200, 200,0.07) 93%,transparent 93%,
+  transparent 100%), linear-gradient(135deg, transparent 0%, transparent 83%, 
+  rgba(200, 200, 200,0.07) 83%, rgba(200, 200, 200,0.07) 91%,transparent 91%, 
+  transparent 100%),linear-gradient(0deg, transparent 0%, transparent 43%, 
+  rgba(200, 200, 200,0.07) 43%, rgba(200, 200, 200,0.07) 50%,transparent 50%, 
+  transparent 100%),linear-gradient(135deg, transparent 0%,transparent 16%, 
+  rgba(200, 200, 200,0.07) 16%, rgba(200, 200, 200,0.07) 56%,transparent 56%, 
+  transparent 100%), linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
+  font-size: 1.2em;
 }
 
-footer {
-background-color: #1f242d;; 
-color: white;
-width: 100%;
-box-sizing: border-box;
-display: flex;
-justify-content: space-around;
-align-items: center;
+footer 
+{
+  background-color: #1f242d;; 
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-footer i{
-font-size: 2.5rem;
-color: black;
-background-color: #03CBDF;
+
+footer i
+{
+  font-size: 2.5rem;
+  color: black;
+  background-color: #03CBDF;
 }
-header{
-background-color: transparent;
-color: white;
-position: sticky;
-top:0;
-z-index: 1000;
-width: 100%;
-box-sizing: border-box;
+header
+{
+  background-color: transparent;
+  color: white;
+  position: sticky;
+  top:0;
+  z-index: 1000;
+  width: 100%;
+  box-sizing: border-box;
 
 }
 .logo
 {
-width: 100px;
-border: 2px solid transparent;
-background-color: white;
+  width: 100px;
+  border: 2px solid transparent;
 }
+
 /*---------- sections ------------*/
 
 section
@@ -59,53 +64,81 @@ section
 }
 .conteneur
 {
-width: 100%;
-padding: 0 15px;
-max-width: 1350px;
-margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+  max-width: 1350px;
+  margin: 0 auto;
 }
 /* ------------ navigation ----------------- */
 
 .navigation 
 {
-display: flex;
-justify-content:space-around;
-align-items: center;
-padding: 0 30px 0 10px;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  padding: 0 30px 0 10px;
+  width: 100%;
 }
 .nav-bar
 {
-display: flex;
+  display: flex;
 }
 
 .accueil-intro
 {
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-between;
-transition: background-color 0.5ms ease;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.5ms ease;
 
 }
 .presentation
 {
-font-size: 1.3em;
+  font-size: 1.3em;
 }
 .texte-js
 {
-color: #03CBDF;
-font-weight: bolder;
+  color: #03CBDF;
+  font-weight: bolder;
 }
-.navigation.scrolled {
-background-color: #1f242d; 
+.navigation.scrolled 
+{
+  background-color: #1f242d; 
 
 }
 /* -------- Acceuil ------ */
 .title{
-margin-bottom: 30px;
-font-size: 52px;
-color: #03CBDF;
-text-align: center;
+  margin-bottom: 30px;
+  font-size: 52px;
+  color: #03CBDF;
+  text-align: center;
+}
+
+.suite
+{
+  display: none;
+}
+.suite.affiche
+{
+  display: block;
+}
+.bouton
+{
+  width: 200px;
+  height: 70px;
+  border: 1px solid #03CBDF;
+  border-radius: 20px;
+  background-color: #03CBDF;
+  color: #222230;
+  font-size: 1.1em;
+  transition: all 0.3s 0.09s;  
+  
+}
+.bouton:hover
+{
+  background-color: #222230;
+  color: #03CBDF;
 }
 
 /* --------- A propos --------- */
@@ -239,8 +272,8 @@ form {
   flex-direction: column;
   margin-bottom: 20px;
 }
-input,
-textarea {
+/*input,
+textarea*/ .form-input {
   padding: 15px;
   border-radius: 3px;
   border: 1px solid;
@@ -255,7 +288,7 @@ label {
   margin-bottom: 10px;
 }
 
-input[type='submit'] {
+/*input[type='submit']*/.cta {
   width: 150px;
   margin: auto;
   margin-top: 30px;
@@ -272,37 +305,37 @@ input[type='submit'] {
 
 .etu-exp
 {
-display: flex;
-justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 .couleur-bleue
 {
-color: #03CBDF;
+  color: #03CBDF;
 }
 
 /* -------- Projets ---------- */
 .projet .projet-card
 {
-display: grid;
-gap: 30px;
-grid-template-columns:repeat(3,1fr) ;
-grid-template-rows: auto;
-justify-items: center;
+  display: grid;
+  gap: 30px;
+  grid-template-columns:repeat(3,1fr) ;
+  grid-template-rows: auto;
+  justify-items: center;
 }
 
 /* ------ Menu burger ----- */
 .navigation .menu-burger
 {
-display: none;
+  display: none;
 }
 .nav-menu
 {
-display: none;
-background-color: #303032;
-width: 100%;
-height: 380px;
-padding-top: 30px;
-padding-bottom: 5px;
+  display: none;
+  background-color: #303032;
+  width: 100%;
+  height: 380px;
+  padding-top: 30px;
+  padding-bottom: 5px;
 
 }
 
@@ -325,115 +358,125 @@ padding-bottom: 5px;
 @media screen and (max-width: 1024px)
 {
 
-body
-{
-  font-size: 1.1em;
-}
-section
-{
-  padding: 10px 0;
-  margin-bottom: 10px 0;
-}
-footer
-{
-  display: flex;
-  justify-content: space-between;
-}
-footer img
-{
-  display: none;
-}
+  body
+  {
+    font-size: 1.1em;
+  }
+  section
+  {
+    padding: 10px 0;
+    margin-bottom: 10px 0;
+  } 
+  footer
+  {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer img
+  {
+    display: none;
+  }
+  .bouton
+  {
+    width: 100px;
+    height: 35px;
+    border: 1px solid #03CBDF;
+    border-radius: 10px;
+    background-color: #03CBDF;
+    color: #222230;
+    font-size: 0.9em;
+  }
 
-.text-title,.title{
-  font-size: 1.7em;
-}
-.navigation
-{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 0;
- }
-.nav-bar
-{
-  display: none;
-} 
- 
-.navigation .menu-burger
-{
-  display: block;
-  font-size: 2.5rem;
-  cursor: pointer;
-}
-.nav-menu
-{
-  font-size: 0.8em;
-}
-.nav-menu.open{
-  display: flex;
-  flex-direction: column;
-  gap:10px;
-  background-color: #1f242d;
-}
-.accueil-intro 
-{
-  display: flex;
-  flex-direction: column-reverse;
-  gap:50px
-}
+  .text-title,.title{
+    font-size: 1.7em;
+  }
+  .navigation
+  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-bar
+  {
+    display: none;
+  } 
+  
+  .navigation .menu-burger
+  {
+    display: block;
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+  .nav-menu
+  {
+    font-size: 0.8em;
+  }
+  .nav-menu.open{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    background-color: #1f242d;
+  }
+  .accueil-intro 
+  {
+    display: flex;
+    flex-direction: column-reverse;
+    gap:50px
+  }
 
-a{
-  padding-bottom: 5px;
-}
-.logo
-{
-    width: 70px;
-    height: 50px;
-    padding-top: 10px;
-}
+  a{
+    padding-bottom: 5px;
+  }
+  .logo
+  {
+      width: 70px;
+      height: 50px;
+      padding-top: 10px;
+  }
 
-.etu-exp
-{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap:30px;
+  .etu-exp
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:30px;
 
-}
-.section-contact {
-  padding: 50px 20px;
-}
+  }
+  .section-contact {
+    padding: 50px 20px;
+  }
 
-.form-nom-email {
-  flex-direction: column;
-  gap: 0;
-}
-.grille
-{
-  display: grid;
-  grid-template-columns: 0.5fr 0.5fr;
-  justify-items: center;
-}
-.grille img
-{
-  width: 80%;
-  height: 80%;
-}
-.text-language
-{
-  font-size: 1em;
-}
-.projet .projet-card
-{
-  width: 300px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(1, 0.5fr);
-  justify-items: center;
-}
-.presentation
-{
-  text-align: center;
-}
+  .form-nom-email {
+    flex-direction: column;
+    gap: 0;
+  }
+  .grille
+  {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    justify-items: center;
+  }
+  .grille img
+  {
+    width: 80%;
+    height: 80%;
+  }
+  .text-language
+  {
+    font-size: 1em;
+  }
+  .projet .projet-card
+  {
+    width: 300px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 0.5fr);
+    justify-items: center;
+  }
+  .presentation
+  {
+    text-align: center;
+  }
+
 }
