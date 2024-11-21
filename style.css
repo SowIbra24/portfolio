@@ -202,7 +202,9 @@ section
 
 .ma-photo
 {
- width: 25%;
+ border-radius:50%;
+ width:350px;
+ height:350px;
 }
 
 li
