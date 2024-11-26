@@ -440,6 +440,12 @@ label {
       padding-top: 10px;
   }
 
+  .ma-photo
+  {
+    width:250px;
+    height:250px;
+  }
+
   .social{
     display: flex;
     justify-content: space-between;
