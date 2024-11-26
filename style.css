@@ -74,7 +74,7 @@ section
 .navigation 
 {
   display: flex;
-  justify-content:space-around;
+  justify-content:space-between;
   align-items: center;
   padding: 0 30px 0 10px;
   width: 100%;
@@ -202,7 +202,6 @@ section
 
 .ma-photo
 {
- border-radius:50%;
  width:350px;
  height:350px;
 }
