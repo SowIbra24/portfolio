@@ -110,7 +110,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     getData().then(repos => {
         repos
-            .filter(repo => repo["name"] !== "SowIbra24" && repo["name"] !== "portfolio" && repo["name"] !== "calculatrice_php")
+            .filter(repo => repo["name"] !== "SowIbra24" && repo["name"] !== "portfolio" 
+                    && repo["name"] !== "calculatrice_php" && repo["name"] !== "MultiLang-Code-Snippets")
             .forEach(repo => {
                 const name = repo["name"];
                 const description = repo["description"];
