@@ -202,8 +202,9 @@ section
 
 .ma-photo
 {
- width:350px;
- height:350px;
+ width: 22%;
+ border-radius: 25px;
+ object-fit: contain;
 }
 
 li
