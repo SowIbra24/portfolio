@@ -443,8 +443,8 @@ label {
 
   .ma-photo
   {
-    width:250px;
-    height:250px;
+   width: 35%;
+   border-radius: 8px;
   }
 
   .social{
