@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Ecrire de façon dynamique 
     const typed = new Typed('.texte-js', {
         strings : [
-            'un developpeur amateur 💻',
+            'un developpeur web 💻',
             'intéressé par la cybersécurité ',
             'étudiant en Systèmes Réseaux et Sécurité'
         ],
