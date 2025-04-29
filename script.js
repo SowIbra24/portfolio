@@ -166,10 +166,19 @@ document.addEventListener('DOMContentLoaded', function () {
             'intéressé par la cybersécurité ',
             'étudiant en Systèmes Réseaux et Sécurité'
         ],
-        typeSpeed: 100,
-        backSpeed: 100,
-        backDelay: 1000,
+        typeSpeed: 50,
+        backSpeed: 20,
+        backDelay: 800,
         loop: true
     });
 });
 
+//animation cercles
+const cercles = document.querySelector(".cercles");
+for(let i=0; i<21;i++)
+{
+    const div = document.createElement('div');
+    div.className = 'cercle';
+    div.style.setProperty('--i', i);
+    cercles.appendChild(div);
+}
