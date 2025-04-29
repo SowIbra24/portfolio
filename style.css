@@ -140,54 +140,7 @@ section
   background-color: #222230;
   color: #03CBDF;
 }
-.img-anime
-{
-  display: flex;
-  justify-content: space-between;
-} 
-#anime
-{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  gap:10px
-}
 
-/* --------- Animations Cercles ---------- */
-.cercles 
-{
-    position: relative  ;
-    left: 30%;
-    top: 40%;
-    height: 90%;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-}
-.cercle
-{
-    position: absolute;
-    background: transparent;
-    width: calc(var(--i) * 2.5vmin);
-    aspect-ratio: 1;
-    border-radius: 50%;
-    border: 3px solid rgb(0,255,13);
-    transform-style: preserve-3d;
-    transform: rotateX(70deg),translateZ(50px);
-    animation: anime 3s ease-in-out calc(var(--i)*0.08s) infinite;
-    box-shadow: 0 0 15px rgb(124, 124, 124), inset 0 0 15px rgb(124, 124, 124); 
-}
-@keyframes anime {
-    0%,
-    100% {
-        transform: rotateX(70deg) translateZ(50px) translateY(0);
-        filter: hue-rotate(0);
-    }
-    50%{
-    transform: rotateX(70deg) translateZ(50px) translateY(-50vmin);
-    filter: hue-rotate(360deg);
-    }
-}
 /* --------- A propos --------- */
 .text-title
 {
@@ -509,21 +462,6 @@ label {
     height: 35px;
     margin: 0;
     color: black;
-  }
-  .cercles
-  {
-    display: none;
-  }
-  #anime
-  {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-  }
-  .img-anime
-  {
-    display: flex;
-    justify-content: center;
   }
   .etu-exp
   {
